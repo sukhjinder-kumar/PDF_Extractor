@@ -1,5 +1,4 @@
 # Getting Started
-
 Follow these steps to run the program -
 
 1. Activate or create a new virtual environment using `python -m venv Env` and `source Env/bin/activate`
@@ -32,3 +31,5 @@ Demo on how to use api's is provided in file `test_api.py`.
 2. `/total_transactional_cost`: Takes transactions as input and return total amount. The output is a string, so use float(output) to typecast into float. Note transactions as is made up of classes and can't be passed directly to api, conversion into dict must be done. See test_api file to see how we did there. It is exact same as response given by filter_transaction api.
 
 3. `/transactional_cost_timeframe`: Takes transactions, intial_date, and end_date as input and return amount spent during that duration. Here to output is str and typecasting is needed to convert into float.
+
+Note that though tempting to generalize the code to any bank statement, it best works on bank statements of form similar to one inside `Attachement\` folder
