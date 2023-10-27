@@ -36,6 +36,7 @@ class Transaction:
         return cls(date, client, amount)
 
 
+# Change this according to your system 
 pdf_path = "Attachements/Bank-Statement-Template-4-TemplateLab.pdf"
 
 # Extract text
@@ -45,7 +46,7 @@ text = extract_text_from_pdf(pdf_path)
 # Test filter_transaction api
 ################################################
 
-api_url = "http://127.0.0.1:5000/filter_transactions"
+api_url = "http://127.0.0.1:5000/filter_transactions" # Change this!
 
 # Send a GET request to the Flask API
 response = requests.get(api_url, json={"text": text})

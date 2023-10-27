@@ -1,38 +1,8 @@
 from flask import Flask, request, jsonify
-import PyPDF2
-import fitz
 import re
 from datetime import datetime
 
 app = Flask(__name__)
-
-
-def extract_images_from_pdf(pdf_path):
-    '''Save image in Output/Image folder'''
-    images = []
-    with fitz.open(pdf_path) as doc:
-        for page_num, page in enumerate(doc):
-            for img_index, img in enumerate(page.get_images(full=True)):
-                xref = img[0]
-                base_image = doc.extract_image(xref)
-                image_data = base_image["image"]
-                image_format = base_image["ext"]
-                img_path = f"Output/Image/image_{page_num}_{img_index}.{image_format}"
-                with open(img_path, "wb") as f:
-                    f.write(image_data)
-                images.append(img_path)
-    return images
-
-
-def extract_text_from_pdf(pdf_path):
-    text = ""
-    with open(pdf_path, "rb") as file:
-        reader = PyPDF2.PdfReader(file)
-        num_pages = len(reader.pages)
-        for page_num in range(num_pages):
-            page = reader.pages[page_num]
-            text += page.extract_text()
-    return text
 
 
 class Transaction:
@@ -99,13 +69,3 @@ def transactional_cost_timeframe():
         if initial_date <= transaction.date <= end_date:
             total_amount += transaction.amount
     return str(total_amount)
-
-
-pdf_path = "Attachements/Bank-Statement-Template-4-TemplateLab.pdf"
-
-# Extract images
-images = extract_images_from_pdf(pdf_path)
-print("Image saved")
-
-# Extract text
-text = extract_text_from_pdf(pdf_path)
