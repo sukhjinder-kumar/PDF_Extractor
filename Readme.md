@@ -14,6 +14,8 @@ password="your_password"
 target_header="Your target header you want to query upon"
 ```
 
+There is an included attachement inside the `Attachement/` folder, so you don't need to run this step to test the remaining codebase.
+
 4. Run the file `python gmail_extractor.py`, your attachements will be downloaded in `Attachements/` folder. It searches for messages that has `target_header` as the subject and contains `.pdf` attachement.
 
 Now you can either use the api's created in `api.py` file (first host it) or use exact function defined in various files.

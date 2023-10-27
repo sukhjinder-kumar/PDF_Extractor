@@ -1,0 +1,40 @@
+Branch Name:
+SUMMARY
+Card TypePrevious 
+BalancePayment / 
+Credits and 
+RebatesPurchases and 
+AdvancesInstallment 
+DueFinance 
+Charges and 
+Other FeesLate Payment 
+ChargesAmount Due
+Unbilld Loan Amount
+TRANSACTION
+Date AmountStatement of Account
+Customer Number:
+Statement Date:
+Payment Due Date:
+Credit Limit:
+Total Amount Due:
+Past Due Amount
+Unbilled Installment Amount
+Total Outstanding Balance
+Description
+REMINDER
+John Smith
+2450 Courage St, STE 108Brownsville, TX 7852123785-54-9674458
+<Branch Name>mm/dd/yyyymm/dd/yyyy390,000.003,898.57Visa Gold 7,126.14 7,126.14 3,898.57 0.00 0.00 0.00 3,898.57
+0.00
+0.00
+0.00
+3,898.57
+12/11/2023 Petron - C5 Station 223.26
+12/12/2022 South Star Drug 313.39
+11/11/2023 Rosewood Condominum 582.96
+10/10/2022 Grab 125.00
+07/08/2022 Amazon 215.00
+01/02/2022 Alba International 656.86
+07/18/2020 Adobe Sales 246.00
+11/11/2021 St. Luke Medical Center 571.10
+09/07/2022 Hotel Sheraton (Las Vegas) 965.00
